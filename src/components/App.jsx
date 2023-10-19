@@ -12,9 +12,9 @@ export const App = () => {
   const options = { good, neutral, bad };
 
   const updateFeedback = type => {
-    if (type == 'good') {
+    if (type === 'good') {
       setGood(good + 1);
-    } else if (type == 'neutral') {
+    } else if (type === 'neutral') {
       setNeutral(neutral + 1);
     } else {
       setBad(bad + 1);
